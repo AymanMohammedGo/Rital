@@ -1,15 +1,15 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import i18nConfig from "../../../i18nConfig";
 import { dir } from "i18next";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "../i18n";
-
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 const i18nNamespaces = ["Home"];
 
 export const metadata = {
   title: "Rital",
-  description: "Architectural, Engineering, & Construction",
+  description: "",
 };
 export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }));
@@ -23,8 +23,18 @@ export default async function RootLayout({ children, params: { locale } }) {
       locale={locale}
       namespaces={i18nNamespaces}
     >
-      <html lang={locale} dir={dir(locale)}>
-        <body>{children}</body>
+      <html lang={locale} dir={locale === "kr" ? "rtl" : dir(locale)}>
+        <body>
+          <Header />
+          {children}
+          {/* <Footer
+            width="240"
+            name="shockersAEC"
+            logo="/img/LogosFooter/logoShockerWhite.svg"
+            data={footerNames}
+            socialMedia={socialMedias}
+          /> */}
+        </body>
       </html>
     </TranslationsProvider>
   );
