@@ -5,7 +5,6 @@ import { dir } from "i18next";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "../i18n";
 
-const inter = Inter({ subsets: ["latin"] });
 const i18nNamespaces = ["Home"];
 
 export const metadata = {
@@ -25,7 +24,7 @@ export default async function RootLayout({ children, params: { locale } }) {
       namespaces={i18nNamespaces}
     >
       <html lang={locale} dir={dir(locale)}>
-        <body className={inter.className}>{children}</body>
+        <body>{children}</body>
       </html>
     </TranslationsProvider>
   );
