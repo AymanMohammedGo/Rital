@@ -14,11 +14,12 @@
   font-weight: 500;
   font-style: normal;
 }
-
 body {
   font-family: "Downlink", "sans-serif";
 }
-
+.great_Vibes {
+  font-family: var(--font-great_Vibes);
+}
 .autoplay-progress {
   position: absolute;
   right: 16px;
