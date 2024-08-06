@@ -22,7 +22,9 @@ const Header = () => {
               alt="rital"
             />
           </Link>
-          <div className="flex md:hidden ">
+          <div className="flex md:hidden  items-center justify-center">
+            <LanguageChanger />
+
             <button
               onClick={() => {
                 setIsOpen(!isOpen);
@@ -47,11 +49,13 @@ const Header = () => {
               </svg>
             </button>
           </div>
+
           <div
             className={`${
               isOpen ? "block" : "hidden"
             } w-full md:block md:w-auto`}
           >
+            {" "}
             <ul
               className={`font-medium flex flex-col pt-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 `}
             >
@@ -100,10 +104,8 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-            <div className="flex md:hidden mt-3 ">
-              <LanguageChanger />
-            </div>
           </div>
+
           <div className="hidden md:flex ">
             <LanguageChanger />
           </div>

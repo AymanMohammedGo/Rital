@@ -33,10 +33,10 @@ module.exports = {
           DEFAULT: "#808184",
         },
       },
+      fontFamily: {
+        custom: ["Downlink", "sans-serif"],
+      },
     },
-  },
-  fontFamily: {
-    custom: ["Downlink", "sans-serif"],
   },
 
   plugins: [],
