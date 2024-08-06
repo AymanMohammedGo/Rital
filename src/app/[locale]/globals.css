@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Shockers";
+  font-family: "Downlink";
   src: url("/fonts/Downlink.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Shockers";
+  font-family: "Downlink";
   src: url("/fonts/Downlink Bold.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
