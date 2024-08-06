@@ -15,7 +15,12 @@ const Header = () => {
             href={`/`}
             className=" flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <Image src="/rital-logo.png" width="100" height="100" alt="rital" />
+            <Image
+              src="/rital-logo-white.png"
+              width="100"
+              height="100"
+              alt="rital"
+            />
           </Link>
           <div className="flex md:hidden ">
             <button
@@ -26,7 +31,7 @@ const Header = () => {
               className="flex items-center p-2 w-10 h-10 justify-center    md:hidden focus:outline-none "
             >
               <svg
-                className="w-5 h-5"
+                className="w-5 h-5 text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -56,7 +61,7 @@ const Header = () => {
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}
-                  className={` block font-normal py-2 px-3 hover:bg-primary hover:text-white rounded-lg transition-all`}
+                  className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
                 >
                   HOME
                 </Link>
@@ -67,7 +72,7 @@ const Header = () => {
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}
-                  className={` block font-normal py-2 px-3 hover:bg-primary hover:text-white rounded-lg transition-all`}
+                  className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
                 >
                   PRODUCTS
                 </Link>
@@ -78,7 +83,7 @@ const Header = () => {
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}
-                  className={` block font-normal py-2 px-3 hover:bg-primary hover:text-white rounded-lg transition-all`}
+                  className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
                 >
                   ABOUT
                 </Link>
@@ -89,7 +94,7 @@ const Header = () => {
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}
-                  className={` block font-normal py-2 px-3 hover:bg-primary hover:text-white rounded-lg transition-all`}
+                  className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
                 >
                   CONTACT
                 </Link>

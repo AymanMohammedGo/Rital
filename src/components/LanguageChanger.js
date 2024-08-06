@@ -51,7 +51,7 @@ export default function LanguageChanger() {
     <Select onValueChange={handleChange} defaultValue={currentLocale}>
       <SelectTrigger
         style={{ boxShadow: "none" }}
-        className={`text-base  border-borderColor  hover:bg-primary hover:text-white   w-[125px]`}
+        className={`text-base  border-borderColor  hover:bg-primary text-white   w-[125px]`}
       >
         <SelectValue placeholder="Select" />
       </SelectTrigger>
@@ -60,7 +60,7 @@ export default function LanguageChanger() {
           <SelectItem
             key={index}
             value={item.lim}
-            className={`cursor-pointer hover:bg-primary hover:text-white hover:rounded-md `}
+            className={`cursor-pointer hover:bg-primary text-white hover:rounded-md `}
           >
             <div class="flex items-center">
               <span className="mx-2 text-center">{t(item.name)}</span>
