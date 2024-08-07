@@ -16,6 +16,7 @@
 }
 body {
   font-family: "Downlink", "sans-serif";
+  overflow-x: hidden;
 }
 .great_Vibes {
   font-family: var(--font-great_Vibes);
