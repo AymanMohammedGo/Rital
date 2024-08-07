@@ -1,6 +1,6 @@
 import ImageOverlaysWithTitle from "@/components/ImageOverlaysWithTitle";
 import Products from "@/components/Products";
-import SlideBox from "@/components/slideBox";
+import SlideBox from "@/components/SlideBox";
 import SlideImage from "@/components/SlideImage";
 import TitleSction from "@/components/TitleSction";
 import Image from "next/image";
