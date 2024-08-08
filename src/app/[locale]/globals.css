@@ -18,6 +18,12 @@ body {
   font-family: "Downlink", "sans-serif";
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1223f;
+}
 .great_Vibes {
   font-family: var(--font-great_Vibes);
 }
@@ -52,4 +58,8 @@ body {
 }
 .swiper-pagination-bullet {
   background-color: white !important;
+}
+.swiper-pagination {
+  margin-top: 20px;
+  position: initial !important;
 }
