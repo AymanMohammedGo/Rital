@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import TitleSction from "./TitleSction";
 
 const AboutHome = () => {
   return (
@@ -12,8 +13,10 @@ const AboutHome = () => {
         className="rounded-xl hidden lg:flex"
       />
       <div className="mx-4 lg:mx-10">
-        <div className="mb-5">
-          <h1 className="text-3xl font-bold mb-5 bg-primary text-white p-4">
+        <TitleSction title="Ritalel Ectric" subTitle="About US" />
+        {/* <div className="mb-5"> */}
+
+        {/* <h1 className="text-3xl font-bold mb-5 bg-primary text-white p-4">
             About Us
           </h1>
           <h2 className="great_Vibes text-primary text-6xl mt-6 mb-4">
@@ -25,9 +28,9 @@ const AboutHome = () => {
             components to ensure durability and long-lasting performance,
             allowing you to enjoy the benefits of our appliances for years to
             come.
-          </p>
-        </div>
-        <div class="flex-col lg:flex-row flex my-5 justify-between items-center flex-wrap">
+          </p> */}
+        {/* </div> */}
+        <div class="grid grid-cols-2 lg:grid-cols-4  my-5 justify-between items-center flex-wrap">
           <div className="my-5 text-center">
             <p className="font-bold text-primary text-xl mb-2">11</p>
             <span className="font-bold">Years of Experience</span>

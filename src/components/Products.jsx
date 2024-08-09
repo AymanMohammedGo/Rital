@@ -26,22 +26,10 @@ const products = [
   {
     imageUrl: "/b2.jpg",
   },
-  {
-    imageUrl: "/b1.jpg",
-  },
-  {
-    imageUrl: "/b2.jpg",
-  },
-  {
-    imageUrl: "/b1.jpg",
-  },
-  {
-    imageUrl: "/b2.jpg",
-  },
 ];
 const Products = () => {
   return (
-    <div className="max-w-screen-xl p-4 m-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-5  ">
+    <div className="max-w-screen-xl p-4 m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 lg:gap-5  ">
       {products.map((item, index) => (
         <Link key={index} href="/products/1">
           <div className="relative overflow-hidden rounded-xl  transition-all duration-300  border-[2px] hover:scale-90 hover:border-secand">
