@@ -17,6 +17,10 @@
 body {
   font-family: "Downlink", "sans-serif";
   overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 ::-webkit-scrollbar {
   width: 5px;

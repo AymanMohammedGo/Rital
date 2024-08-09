@@ -40,13 +40,7 @@ export default async function RootLayout({ children, params: { locale } }) {
         <body>
           <Header />
           {children}
-          {/* <Footer
-            width="240"
-            name="shockersAEC"
-            logo="/img/LogosFooter/logoShockerWhite.svg"
-            data={footerNames}
-            socialMedia={socialMedias}
-          /> */}
+          <Footer />
         </body>
       </html>
     </TranslationsProvider>

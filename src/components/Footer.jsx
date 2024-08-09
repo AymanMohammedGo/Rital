@@ -2,102 +2,108 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Footer = ({
-  width,
-  name,
-  logo,
-  socialMedia,
-  data,
-}) => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  
   return (
-    <footer className="bg-shockersAEC z-10 min-h-screen  sm:min-h-full">
-      <div className="relative mx-auto max-w-screen-xxl px-4 py-8 sm:px-6 lg:p-8  ">
-        <div className="mt-16 lg:flex lg:items-center lg:justify-between">
-          <div className="flex justify-center  lg:justify-start">
-            <Link
-              href={`/`}
-              className=" flex items-center space-x-3 rtl:space-x-reverse"
-            >
-              <Image src={logo} width={width} height={width} alt={name} />
-            </Link>
-          </div>
-         
+    <footer className="bg-secand z-10 pt-16 pb-8 px-4 ">
+      <div className="relative mx-auto max-w-screen-xl">
+        <div className="flex flex-col md:flex-row  items-center justify-between mb-10">
+          <Link href={`/`} className=" flex items-center  ">
+            <Image
+              src="/rital-logo-white.png"
+              width={150}
+              height={150}
+              alt="logo"
+            />
+          </Link>
+          <ul
+            className={`font-medium text-center flex flex-col pt-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 `}
+          >
+            <li>
+              <Link
+                href="/"
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+                className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
+              >
+                HOME
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/products"
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+                className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
+              >
+                PRODUCTS
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+                className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
+              >
+                ABOUT
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+                className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
+              >
+                CONTACT
+              </Link>
+            </li>
+          </ul>
         </div>
         <div
-          className={`mt-20 text-center lg:text-start grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 lg:gap-x-[580px]`}
+          className={` grid grid-cols-1 text-center md:text-start gap-0 md:gap-8 md:grid-cols-2 lg:grid-cols-2`}
         >
           <div>
-            <Link href={data?.LinkAddress || "#"}>
-              <p className=" text-white text-xl font-semibold">
-                {data?.TitleAddress}
-              </p>
-              <ul className="mt-3 text-sm text-white">
-                <li className="my-2">
-                  <span className="text-base">{data?.CityAddress}</span>
-                </li>
-                <li className="my-2">
-                  <span className="text-base">{data?.DetailedAddress}</span>
-                </li>
-              </ul>
-            </Link>
+            <div className="text-white mb-8">
+              <h1 className="font-bold mb-3">Address</h1>
+              <div className="text-sm">
+                <p>Iraq - Sulaymaniyah</p>
+                <span>25566 Hc 1, Glenallen, Alaska, 99588</span>
+              </div>
+            </div>
+            <div className="text-white mb-8">
+              <h1 className="font-bold mb-3">Phone</h1>
+              <div className="text-sm">
+                <p>077 123 456 1245</p>
+                <p>077 123 456 1245</p>
+              </div>
+            </div>
           </div>
           <div>
-            <p className=" text-white text-xl font-semibold">
-              {data?.TitlePhone}
-            </p>
-
-            <ul className="mt-3 text-sm text-white ">
-              <li className="my-2">
-                <span className="text-base">{data?.Phone}</span>
-              </li>
-              {data?.Phone1 && (
-                <li className="my-2">
-                  <span className="text-base">{data?.Phone1}</span>
-                </li>
-              )}
-            </ul>
-          </div>
-          <div>
-            <p className=" text-white text-xl font-semibold">
-              {data?.TitleEmail}
-            </p>
-            <ul className="mt-3 text-sm text-white">
-              <li className="my-2">
-                <Link href={`mailto:${data?.Email}` || "#"}>
-                  <span className="text-base">{data?.Email}</span>
-                </Link>
-              </li>
-
-              {data?.Email1 && (
-                <li className="my-2">
-                  <Link href={`mailto:${data?.Email1}` || "#"}>
-                    <span className="text-base">{data?.Email1}</span>
-                  </Link>
-                </li>
-              )}
-            </ul>
-          </div>
-          <div>
-            <p className="text-xl font-semibold text-white">
-              {data?.TitleSocialMedia}
-            </p>
-
-            <ul className="mt-3 text-sm text-white">
-              {socialMedia.map((item, index) => (
-                <li className="my-2" key={index}>
-                  <Link href={item?.attributes?.LinkURL || "#"}>
-                    <span className="text-base ">{item?.attributes?.Name}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="text-white mb-8">
+              <h1 className="font-bold mb-3">Email</h1>
+              <div className="text-sm">
+                <p>Rital@gmail.com</p>
+                <p>Rital@gmail.com</p>
+              </div>
+            </div>
+            <div className="text-white mb-8">
+              <h1 className="font-bold mb-3">Follow Us</h1>
+              <div className="text-sm">
+                <p>Facabook</p>
+                <p>Instgram</p>
+              </div>
+            </div>
           </div>
         </div>
-        <p className="mt-12 text-center text-white ">
-          {data?.PrivacyPolicy} {currentYear}
+        <p className="text-center text-white ">
+          Privacy Policy © Rital {currentYear}
         </p>
       </div>
     </footer>

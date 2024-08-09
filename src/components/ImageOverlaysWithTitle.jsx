@@ -2,7 +2,7 @@ import Image from "next/image";
 import TitleSction from "./TitleSction";
 const ImageOverlaysWithTitle = ({ title, imgURL, des }) => {
   return (
-    <div className="relative w-screen h-screen mt-10">
+    <div className="relative w-screen h-[600px] mt-10">
       <Image
         className="object-cover"
         src={imgURL}

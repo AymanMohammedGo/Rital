@@ -1,3 +1,4 @@
+import AboutHome from "@/components/AboutHome";
 import HappyClients from "@/components/HappyClients";
 import ImageOverlaysWithTitle from "@/components/ImageOverlaysWithTitle";
 import Products from "@/components/Products";
@@ -13,7 +14,7 @@ export default function Home() {
       <TitleSction title="Products" subTitle="New Arrivals" />
       <SlideBox />
       <HappyClients />
-      <TitleSction title="Products" subTitle="New Arrivals" />
+      <TitleSction title="Products" subTitle="Best Seller" />
       <Products />
       <ImageOverlaysWithTitle
         title="RITAL ELECTRICS"
@@ -21,6 +22,7 @@ export default function Home() {
         des="Where Innovation Meets Excellence.
 Reach out to us for electrifying solutions!"
       />
+      <AboutHome/>
     </main>
   );
 }
