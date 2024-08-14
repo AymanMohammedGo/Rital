@@ -67,21 +67,24 @@ const Footer = () => {
           </ul>
         </div>
         <div
-          className={` grid grid-cols-1 text-center md:text-start gap-0 md:gap-8 md:grid-cols-2 lg:grid-cols-2`}
+          className={` grid grid-cols-1 text-center md:text-start gap-0 md:gap-8 lg:gap-16 xl:gap-28 md:grid-cols-2 lg:grid-cols-2`}
         >
           <div>
             <div className="text-white mb-8">
               <h1 className="font-bold mb-3">Address</h1>
               <div className="text-sm">
                 <p>Iraq - Sulaymaniyah</p>
-                <span>25566 Hc 1, Glenallen, Alaska, 99588</span>
+                <span>
+                  arbat road srores complex of sulaymaniyah chamber of commerce,
+                  wharehouse number 417
+                </span>
               </div>
             </div>
             <div className="text-white mb-8">
               <h1 className="font-bold mb-3">Phone</h1>
               <div className="text-sm">
-                <p>077 123 456 1245</p>
-                <p>077 123 456 1245</p>
+                <p>+964 0770 153 9764</p>
+                <p>+964 0770 153 9764</p>
               </div>
             </div>
           </div>
@@ -89,7 +92,7 @@ const Footer = () => {
             <div className="text-white mb-8">
               <h1 className="font-bold mb-3">Email</h1>
               <div className="text-sm">
-                <p>Rital@gmail.com</p>
+                <p>Salim@ritalelectric.com</p>
                 <p>Rital@gmail.com</p>
               </div>
             </div>

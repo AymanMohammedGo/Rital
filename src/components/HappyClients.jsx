@@ -93,7 +93,7 @@ const HappyClients = () => {
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <div className=" flex flex-col border-[1px] border-white/50 p-6 rounded-xl">
-                  <p className="mb-4 text-xl">{testimonial.text}</p>
+                  <p className="mb-4 text-xl lg:text-2xl">{testimonial.text}</p>
                   <div className="flex items-center">
                     <div className="w-16 h-w-16 ">
                       <Image
@@ -107,7 +107,7 @@ const HappyClients = () => {
 
                     <div className="pl-3 flex-1">
                       <p>{testimonial.name}</p>
-                      <span>{testimonial.position}</span>
+                      <span className="font-light">{testimonial.position}</span>
                     </div>
                   </div>
                 </div>

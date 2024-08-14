@@ -34,7 +34,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        custom: ["Downlink", "sans-serif"],
+        custom: ["Magistral", "sans-serif"],
       },
     },
   },

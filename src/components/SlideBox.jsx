@@ -69,8 +69,12 @@ const SlideBox = () => {
             {activeSection === section.id && (
               <>
                 <div className="flex-1 px-4 mb-4">
-                  <h2 className="text-xl font-semibold">{section.title}</h2>
-                  <p className="mt-2">{section.description}</p>
+                  <h2 className="text-xl lg:text-2xl font-bold">
+                    {section.title}
+                  </h2>
+                  <p className="mt-2 text-base lg:text-lg">
+                    {section.description}
+                  </p>
                 </div>
                 <div className="w-full h-full">
                   <Image
