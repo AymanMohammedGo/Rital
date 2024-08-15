@@ -5,7 +5,8 @@
   font-family: "Magistral Extra";
   src: url("/fonts/Magistral-ExtraBoldItalic.eot");
   src: local("Magistral Extra Bold Italic"), local("Magistral-ExtraBoldItalic"),
-    url("/fonts/Magistral-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Magistral-ExtraBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
     url("/fonts/Magistral-ExtraBoldItalic.woff2") format("woff2"),
     url("/fonts/Magistral-ExtraBoldItalic.woff") format("woff"),
     url("/fonts/Magistral-ExtraBoldItalic.ttf") format("truetype");
@@ -135,9 +136,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #d1223f;
 }
-.great_Vibes {
-  font-family: var(--font-great_Vibes);
-}
+
 .autoplay-progress {
   position: absolute;
   right: 16px;
@@ -173,4 +172,11 @@ body {
 .swiper-pagination {
   margin-top: 20px;
   position: initial !important;
+}
+.gradient-background {
+  background: linear-gradient(
+    180deg,
+    rgba(209, 34, 63, 1) 0%,
+    rgba(35, 31, 32, 1) 100%
+  );
 }

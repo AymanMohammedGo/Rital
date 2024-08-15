@@ -13,43 +13,46 @@ const AboutHome = () => {
         className="rounded-xl hidden lg:flex"
       />
       <div className="mx-4 lg:mx-10">
-        <TitleSction title="Ritalel Ectric" subTitle="About US" />
-        {/* <div className="mb-5"> */}
-
-        {/* <h1 className="text-3xl font-bold mb-5 bg-primary text-white p-4">
-            About Us
-          </h1>
-          <h2 className="great_Vibes text-primary text-6xl mt-6 mb-4">
+        <div className="mb-10 lg:mb-16 text-center relative">
+          <span
+            style={{
+              background: `linear-gradient(180deg, #D1223F,#231F20)`,
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+            className="   w-full font-bold  text-4xl lg:text-5xl"
+          >
             Ritalel Ectric
-          </h2>
-          <p className="">
-            Each product undergoes rigorous testing and adheres to the highest
-            Italian quality standards. We source the finest materials and
-            components to ensure durability and long-lasting performance,
-            allowing you to enjoy the benefits of our appliances for years to
-            come.
-          </p> */}
-        {/* </div> */}
-        <div class="grid grid-cols-2 lg:grid-cols-4  my-5 justify-between items-center flex-wrap">
+          </span>
+        </div>
+
+        <div class="grid grid-cols-2   my-5 justify-between lg:items-center flex-wrap">
           <div className="my-5 text-center">
-            <p className="font-bold text-primary text-xl mb-2">11</p>
-            <span className="font-bold">Years of Experience</span>
+            <p className="font-bold text-primary text-2xl lg:text-3xl mb-2">
+              11
+            </p>
+            <span className="font-bold text-lg">Years of Experience</span>
           </div>
           <div className="my-5 text-center">
-            <p className="font-bold text-primary text-xl mb-2">100</p>
-            <span className="font-bold">Product</span>
+            <p className="font-bold text-primary text-2xl lg:text-3xl mb-2">
+              100
+            </p>
+            <span className="font-bold text-lg">Product</span>
           </div>
           <div className="my-5 text-center">
-            <p className="font-bold text-primary text-xl mb-2">30</p>
-            <span className="font-bold">Staffs</span>
+            <p className="font-bold text-primary text-2xl lg:text-3xl mb-2">
+              30
+            </p>
+            <span className="font-bold text-lg">Staffs</span>
           </div>
           <div className="my-5 text-center">
-            <p className="font-bold text-primary text-xl mb-2">1500</p>
-            <span className="font-bold">Happy Customers</span>
+            <p className="font-bold text-primary text-2xl lg:text-3xl mb-2">
+              1500
+            </p>
+            <span className="font-bold text-lg">Happy Customers</span>
           </div>
         </div>
-        {/* <hr className="my-5 border-secand"></hr> */}
-        <p>
+        <p className="text-lg">
           The amount of love gained by you people is just pure and we are keep
           on improving our services and tastes.
         </p>

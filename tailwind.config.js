@@ -33,6 +33,7 @@ module.exports = {
           DEFAULT: "#808184",
         },
       },
+
       fontFamily: {
         custom: ["Magistral", "sans-serif"],
       },

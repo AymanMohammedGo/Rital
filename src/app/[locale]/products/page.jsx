@@ -10,7 +10,9 @@ const page = () => {
         imgURL="/creative.jpg"
         des="EMPOWER YOUR HOME WITH RITAL ELECTRICS"
       />
-      <Products />
+      <div className="my-10">
+        <Products />
+      </div>
     </div>
   );
 };

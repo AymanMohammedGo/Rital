@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <main>
       <SlideImage />
-      <TitleSction title="Products" subTitle="New Arrivals" />
+      <TitleSction title="New Arrivals" color1={"#D1223F"} color2={"#231F20"} />
       <SlideBox />
       <HappyClients />
-      <TitleSction title="Products" subTitle="Best Seller" />
+      <TitleSction title="Best Seller" color1={"#D1223F"} color2={"#231F20"} />
       <Products />
       <ImageOverlaysWithTitle
         title="RITAL ELECTRICS"
@@ -22,7 +22,7 @@ export default function Home() {
         des="Where Innovation Meets Excellence.
 Reach out to us for electrifying solutions!"
       />
-      <AboutHome/>
+      <AboutHome />
     </main>
   );
 }

@@ -13,8 +13,11 @@ const ImageOverlaysWithTitle = ({ title, imgURL, des }) => {
       <div className="bg-black bg-opacity-80 w-full h-full absolute top-0" />
       <div className="absolute flex items-center justify-center  inset-0 m-auto   ">
         <div className=" text-center lg:text-start  text-white p-2">
-          <TitleSction title="Call Us" subTitle="Contact" />
-
+          <div className="mb-10 lg:mb-16 text-center relative">
+            <span className=" text-white  w-full font-bold  text-4xl lg:text-5xl">
+              CALL US
+            </span>
+          </div>
           <h1 className=" text-center font-bold my-6 text-4xl md:text-5xl lg:text-6xl ">
             {title}
           </h1>

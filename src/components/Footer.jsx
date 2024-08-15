@@ -88,7 +88,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="ml-[83px]">
             <div className="text-white mb-8">
               <h1 className="font-bold mb-3">Email</h1>
               <div className="text-sm">

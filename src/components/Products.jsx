@@ -32,9 +32,9 @@ const Products = () => {
     <div className="max-w-screen-xl p-4 m-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-3 lg:gap-5  ">
       {products.map((item, index) => (
         <Link key={index} href="/products/1">
-          <div className="relative overflow-hidden rounded-xl  transition-all duration-300  border-[2px] hover:scale-90 hover:border-secand">
+          <div className="relative overflow-hidden rounded-xl  transition-all duration-300   hover:scale-90 ">
             <div className=" text-center w-full ">
-              <h1 className="px-2 text-base lg:text-2xl py-4 bg-secand text-white">
+              <h1 className="px-2 text-lg lg:text-2xl py-4 gradient-background text-white">
                 Pressure Cooker
               </h1>
             </div>

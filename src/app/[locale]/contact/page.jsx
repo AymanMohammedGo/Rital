@@ -11,7 +11,7 @@ const page = () => {
           imgURL="/cantcat.png"
         />
       </div>
-      <div className="max-w-screen-xl p-2 w-full  my-5 mx-auto ">
+      <div className="max-w-screen-xl p-2 w-full my-3 lg:my-5 mx-auto ">
         <div className=" rounded-lg  md:flex">
           {/* Form Section */}
           <div className="md:w-1/2 py-5 lg:px-5">
@@ -19,62 +19,62 @@ const page = () => {
               <div>
                 <label
                   htmlFor="firstName"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-lg lg:text-xl font-medium text-gray-700"
                 >
                   FirstName
                 </label>
                 <input
                   type="text"
                   id="firstName"
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm "
+                  className="mt-1 block text-sm lg:text-base w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm "
                   required
                 />
               </div>
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-lg lg:text-xl font-medium text-gray-700"
                 >
                   Your email
                 </label>
                 <input
                   type="email"
                   id="email"
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm "
+                  className="mt-1 block text-sm lg:text-base w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm "
                   required
                 />
               </div>
               <div>
                 <label
                   htmlFor="subject"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-lg lg:text-xl font-medium text-gray-700"
                 >
                   Subject
                 </label>
                 <input
                   type="text"
                   id="subject"
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm "
+                  className="mt-1 block text-sm lg:text-base w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm "
                   required
                 />
               </div>
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-lg lg:text-xl font-medium text-gray-700"
                 >
                   Your message
                 </label>
                 <textarea
                   id="message"
                   rows="4"
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm "
+                  className="mt-1 block text-sm lg:text-base w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm "
                   required
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full bg-primary text-white font-semibold py-2 px-4 rounded-md hover:bg-secand transition duration-300"
+                className="w-full bg-primary text-lg lg:text-xl text-white font-semibold py-2 px-4 rounded-md hover:bg-secand transition duration-300"
               >
                 Send Message
               </button>

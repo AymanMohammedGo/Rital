@@ -65,7 +65,12 @@ const HappyClients = () => {
       <div className="bg-black bg-opacity-80 w-full h-full absolute top-0" />
       <div className=" flex items-center justify-center w-full h-full     ">
         <div className="w-full  max-w-screen-xl  text-white p-2">
-          <TitleSction title="Testimonials" subTitle="Happy Clients" />
+          <TitleSction
+            title="Happy Clients"
+            color1={"#FFFFFF"}
+            color2={"#FFFFFF"}
+          />
+
           <Swiper
             slidesPerView={1}
             spaceBetween={0}
