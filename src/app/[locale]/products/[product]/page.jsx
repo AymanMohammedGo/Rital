@@ -2,7 +2,60 @@ import ImageOverlaysCenter from "@/components/ImageOverlaysCenter";
 import React from "react";
 import Image from "next/image";
 
-const page = ({ parmas }) => {
+const page = ({ product }) => {
+  // const products = [
+  //   {
+  //     id: 1,
+  //     title: "Rital Chopper 1001",
+  //     imageUrl: "/products/chooper3l.png",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Rital Chopper 1002",
+  //     imageUrl: "/products/chooper6l.png",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Rital Pressure Cooker",
+  //     imageUrl: "/products/cooker2.png",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Rital Blender",
+  //     imageUrl: "/products/Blender2.png",
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Rital Air Fryer",
+  //     imageUrl: "/products/Airfryer1.png",
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Rital Turkish Tea Maker",
+  //     imageUrl: "/products/Teamaker2.png",
+  //   },
+  //   {
+  //     id: 7,
+  //     title: "Rital Vacuum Cleaner",
+  //     imageUrl: "/products/Vacuum1.png",
+  //   },
+  //   {
+  //     id: 8,
+  //     title: "Rital Heater",
+  //     imageUrl: "/products/heater.png",
+  //   },
+  //   {
+  //     id: 9,
+  //     title: "Rital Hand Mixer",
+  //     imageUrl: "/products/Prmixer.png",
+  //   },
+  //   {
+  //     id: 10,
+  //     title: "Rital Water Boiler",
+  //     imageUrl: "/products/Prboiler.png",
+  //   },
+  // ];
+  console.log(product);
   return (
     <div>
       <ImageOverlaysCenter

@@ -8,8 +8,9 @@ import Footer from "@/components/Footer";
 const i18nNamespaces = ["Home"];
 
 export const metadata = {
-  title: "Rital",
-  description: "",
+  title: "Rital Electric",
+  description:
+    "Your trusted destination for high-quality kitchen and home appliances",
 };
 
 export function generateStaticParams() {

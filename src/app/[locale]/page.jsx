@@ -11,16 +11,17 @@ export default function Home() {
   return (
     <main>
       <SlideImage />
-      <TitleSction title="New Arrivals" color1={"#D1223F"} color2={"#231F20"} />
+      <TitleSction title="NEW ARRIVALS" color={"text-primary"} />
       <SlideBox />
       <HappyClients />
-      <TitleSction title="Best Seller" color1={"#D1223F"} color2={"#231F20"} />
+      <TitleSction title="BEST SELLER" color={"text-primary"} />
       <Products />
       <ImageOverlaysWithTitle
-        title="RITAL ELECTRICS"
-        imgURL="/bg_1.jpg"
-        des="Where Innovation Meets Excellence.
-Reach out to us for electrifying solutions!"
+        title="Empower your home with Rital Electrics"
+        imgURL="/contact.jpg"
+        des="Where Innovation Meets Excellence. Reach out to us for electrifying solutions!"
+        button="true"
+        titleButton="Contact us"
       />
       <AboutHome />
     </main>

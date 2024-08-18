@@ -46,6 +46,14 @@ const SlideImage = () => {
                   modern technology"
           />
         </SwiperSlide>
+        <SwiperSlide className="w-screen h-screen">
+          <ImageOverlaysCenter
+            imgURL="/bg_1.jpg"
+            title="Air Fryer"
+            des="make all your favorite foods with less of the oil and none of the
+              mess."
+          />
+        </SwiperSlide>
 
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>

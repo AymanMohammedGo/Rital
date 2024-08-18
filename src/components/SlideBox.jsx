@@ -7,31 +7,35 @@ const sections = [
   {
     id: 1,
     number: "01",
-    title: "Choppers",
-    description: "Impress everyone by taking your recipes to the next level",
-    imageUrl: "/creative.jpg",
+    title: "MULTIFUNCTION BLENDER",
+    description:
+      "One machine with multiple functions Extract nutritious juices",
+    imageUrl: "/Blender1.jpg",
   },
   {
     id: 2,
     number: "02",
-    title: "Choppers",
-    description: "Impress everyone by taking your recipes to the next level",
-    imageUrl: "/creative.jpg",
+    title: "TURKISH TEA MAKER",
+    description:
+      "Experience the rich and authentic taste of Turkish tea Capture the essence of tradition in every sip",
+    imageUrl: "/teamaker.jpg",
   },
   {
     id: 3,
     number: "03",
-    title: "Choppers",
-    description: "Impress everyone by taking your recipes to the next level",
-    imageUrl: "/creative.jpg",
+    title: "SMART PRESSURE COOKER",
+    description:
+      "Effortlessly cook delicious meals in minutes Bring convenience and flavor to your kitchen",
+    imageUrl: "/cooker1.jpg",
   },
-  {
-    id: 4,
-    number: "04",
-    title: "Choppers",
-    description: "Impress everyone by taking your recipes to the next level",
-    imageUrl: "/creative.jpg",
-  },
+  // {
+  //   id: 4,
+  //   number: "04",
+  //   title: "Choppers",
+  //   description:
+  //     "Effortlessly cook delicious meals in minutes Bring convenience and flavor to your kitchen",
+  //   imageUrl: "/creative.jpg",
+  // },
 ];
 const SlideBox = () => {
   const [activeSection, setActiveSection] = useState(1);
@@ -44,7 +48,7 @@ const SlideBox = () => {
       {sections.map((section) => (
         <div
           key={section.id}
-          className={`mb-4 mx-2 border-primary border-2  rounded-3xl lg:mb-0 cursor-pointer transition-all duration-300 overflow-hidden ${
+          className={`mb-4 mx-2 border-gray-100 border-[3px] shadow-lg rounded-3xl lg:mb-0 cursor-pointer transition-all duration-300 overflow-hidden ${
             activeSection === section.id ? "flex-grow" : "flex-shrink-0 lg:w-20"
           }`}
           onClick={() => toggleSection(section.id)}
@@ -54,12 +58,17 @@ const SlideBox = () => {
               <span className="text-2xl font-bold mx-2 my-4 bg-primary  w-[60px] h-[60px] flex justify-center items-center text-white rounded-full">
                 {section.number}
               </span>
+              {activeSection === section.id && (
+                <h2 className="flex items-center flex-1 mx-2 text-xl lg:text-2xl font-bold">
+                  {section.title}
+                </h2>
+              )}
               {activeSection !== section.id && (
                 <div className="flex-1 h-[90px] lg:hidden">
                   <Image
                     src={section.imageUrl}
-                    width={400}
-                    height={300}
+                    width={500}
+                    height={500}
                     alt={section.title}
                     className="w-full h-full object-cover transition-all duration-300"
                   />
@@ -69,18 +78,18 @@ const SlideBox = () => {
             {activeSection === section.id && (
               <>
                 <div className="flex-1 px-4 mb-4">
-                  <h2 className="text-xl lg:text-2xl font-bold">
+                  {/* <h2 className="text-xl lg:text-2xl font-bold">
                     {section.title}
-                  </h2>
-                  <p className="mt-2 text-base lg:text-lg">
+                  </h2> */}
+                  <p className=" text-base h-[72px] md:h-[60px] lg:text-lg">
                     {section.description}
                   </p>
                 </div>
-                <div className="w-full h-full">
+                <div className="w-full max-h-[400px] transition-all">
                   <Image
                     src={section.imageUrl}
-                    width={400}
-                    height={300}
+                    width={500}
+                    height={500}
                     alt={section.title}
                     className="w-full h-full object-cover transition-all duration-300"
                   />
@@ -92,8 +101,8 @@ const SlideBox = () => {
               <div className="w-full h-full  lg:block hidden">
                 <Image
                   src={section.imageUrl}
-                  width={400}
-                  height={300}
+                  width={500}
+                  height={500}
                   alt={section.title}
                   className="w-full h-full object-cover transition-all duration-300"
                 />

@@ -8,7 +8,7 @@ const page = () => {
         <ImageOverlaysCenter
           title="Contact Us"
           des="Reach out to us for electrifying solutions!"
-          imgURL="/cantcat.png"
+          imgURL="/contact.jpg"
         />
       </div>
       <div className="max-w-screen-xl p-2 w-full my-3 lg:my-5 mx-auto ">

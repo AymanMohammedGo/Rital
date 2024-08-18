@@ -7,8 +7,8 @@ const page = () => {
     <div>
       <ImageOverlaysCenter
         title="Products"
-        imgURL="/creative.jpg"
-        des="EMPOWER YOUR HOME WITH RITAL ELECTRICS"
+        imgURL="/products/products.png"
+        des="QUALITY IS OUR CORNERSTONE"
       />
       <div className="my-10">
         <Products />
