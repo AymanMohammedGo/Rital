@@ -55,16 +55,16 @@ const products = [
 ];
 const Products = () => {
   return (
-    <div className="max-w-screen-xl px-4 m-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-3 lg:gap-5  ">
+    <div className="max-w-screen-xl px-4 m-auto grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4  gap-3 lg:gap-5  ">
       {products.map((item, index) => (
         <Link key={index} href={`/products/${item.id}`}>
           <div className="relative overflow-hidden rounded-xl  transition-all duration-300   hover:scale-90 ">
-            <div className=" text-center w-full h-[88px] ">
+            <div className=" text-center w-full h-[70px]  lg:h-full">
               <h1 className="px-2 h-full flex items-center justify-center text-lg lg:text-xl py-4 bg-secand text-white">
                 {item.title}
               </h1>
             </div>
-            <div className="h-[300px]">
+            <div className="h-[250px] sm:h-[400px] lg:h-[300px]">
               <Image
                 src={item.imageUrl}
                 width={400}

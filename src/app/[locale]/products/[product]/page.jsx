@@ -124,13 +124,15 @@ const page = ({ params }) => {
         imgURL="/product.png"
       />
       <div className="max-w-screen-xl my-4 lg:my-10 mx-auto flex flex-col lg:flex-row items-center justify-center">
-        <Image
-          src={product[0].imageUrl}
-          width={300}
-          height={300}
-          alt="detail"
-          className="rounded-xl w-[400px] lg:w-[800px] h-full mb-4 lg:mb-0 shadow-lg"
-        />
+        <div className="mx-4 mb-3">
+          <Image
+            src={product[0].imageUrl}
+            width={300}
+            height={300}
+            alt="detail"
+            className="rounded-xl w-[400px] lg:w-[800px] h-full mb-4 lg:mb-0 shadow-lg"
+          />
+        </div>
         <div className="mx-4 lg:mx-10 w-full">
           <div className="mb-5 w-full">
             {product[0].detail.map((item, index) => (
