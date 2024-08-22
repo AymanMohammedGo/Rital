@@ -2,6 +2,7 @@ import Image from "next/image";
 import TitleSction from "./TitleSction";
 import Link from "next/link";
 const ImageOverlaysWithTitle = ({
+  titlesection,
   title,
   imgURL,
   des,
@@ -22,7 +23,7 @@ const ImageOverlaysWithTitle = ({
         <div className=" text-center lg:text-start  text-white p-4">
           <div className="mb-10 lg:mb-14 text-center relative">
             <span className=" text-white  w-full font-bold  text-4xl lg:text-5xl">
-              CALL US
+              {titlesection}
             </span>
           </div>
           <h1 className=" text-center font-bold my-6 text-4xl md:text-5xl lg:text-6xl ">

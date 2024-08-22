@@ -1,56 +1,143 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+// const products = [
+//   {
+//     id: 1,
+//     title: "Rital Chopper 1001",
+//     imageUrl: "/products/chooper3l.png",
+//   },
+//   {
+//     id: 2,
+//     title: "Rital Chopper 1002",
+//     imageUrl: "/products/chooper6l.png",
+//   },
+//   {
+//     id: 3,
+//     title: "Rital Pressure Cooker",
+//     imageUrl: "/products/cooker2.png",
+//   },
+//   {
+//     id: 4,
+//     title: "Rital Blender",
+//     imageUrl: "/products/Blender2.png",
+//   },
+//   {
+//     id: 5,
+//     title: "Rital Air Fryer",
+//     imageUrl: "/products/Airfryer1.png",
+//   },
+//   {
+//     id: 6,
+//     title: "Rital Turkish Tea Maker",
+//     imageUrl: "/products/Teamaker2.png",
+//   },
+//   {
+//     id: 7,
+//     title: "Rital Vacuum Cleaner",
+//     imageUrl: "/products/Vacuum1.png",
+//   },
+//   {
+//     id: 8,
+//     title: "Rital Heater",
+//     imageUrl: "/products/heater.png",
+//   },
+//   {
+//     id: 9,
+//     title: "Rital Hand Mixer",
+//     imageUrl: "/products/Prmixer.png",
+//   },
+//   {
+//     id: 10,
+//     title: "Rital Water Boiler",
+//     imageUrl: "/products/Prboiler.png",
+//   },
+// ];
 const products = [
   {
     id: 1,
-    title: "Rital Chopper 1001",
-    imageUrl: "/products/chooper3l.png",
+    title: "Hand mixer",
+    imageUrl: "/products/new/1.jpg",
   },
   {
     id: 2,
-    title: "Rital Chopper 1002",
-    imageUrl: "/products/chooper6l.png",
+    title: "Electric pyrex stove",
+    imageUrl: "/products/new/2.jpg",
   },
   {
     id: 3,
-    title: "Rital Pressure Cooker",
-    imageUrl: "/products/cooker2.png",
+    title: "Hand mixer set",
+    imageUrl: "/products/new/3.jpg",
   },
   {
     id: 4,
-    title: "Rital Blender",
-    imageUrl: "/products/Blender2.png",
+    title: "Food Processor 3L",
+    imageUrl: "/products/new/4.jpg",
   },
   {
     id: 5,
-    title: "Rital Air Fryer",
-    imageUrl: "/products/Airfryer1.png",
+    title: "Food processor 4L",
+    imageUrl: "/products/new/5.jpg",
   },
   {
     id: 6,
-    title: "Rital Turkish Tea Maker",
-    imageUrl: "/products/Teamaker2.png",
+    title: "Food Processor 4L",
+    imageUrl: "/products/new/6.jpg",
   },
   {
     id: 7,
-    title: "Rital Vacuum Cleaner",
-    imageUrl: "/products/Vacuum1.png",
+    title: "Hand grinder",
+    imageUrl: "/products/new/7.jpg",
   },
   {
     id: 8,
-    title: "Rital Heater",
-    imageUrl: "/products/heater.png",
+    title: "industrial mixer",
+    imageUrl: "/products/new/8.jpg",
   },
   {
     id: 9,
-    title: "Rital Hand Mixer",
-    imageUrl: "/products/Prmixer.png",
+    title: "Milk jug",
+    imageUrl: "/products/new/9.jpg",
   },
   {
     id: 10,
-    title: "Rital Water Boiler",
-    imageUrl: "/products/Prboiler.png",
+    title: "Industrial blender",
+    imageUrl: "/products/new/10.jpg",
+  },
+  {
+    id: 11,
+    title: "Electric cutter 2L",
+    imageUrl: "/products/new/11.jpg",
+  },
+  {
+    id: 12,
+    title: "Heater cooker",
+    imageUrl: "/products/new/12.jpg",
+  },
+  {
+    id: 13,
+    title: "Electric cutter 1.8L",
+    imageUrl: "/products/new/13.jpg",
+  },
+  {
+    id: 14,
+    title: "industrial mill",
+    imageUrl: "/products/new/14.jpg",
+  },
+  {
+    id: 15,
+    title: "Electric1 cutter 2L",
+    imageUrl: "/products/new/15.jpg",
+  },
+  {
+    id: 16,
+    title: "Electric cutter 2L",
+    imageUrl: "/products/new/16.jpg",
+  },
+  {
+    id: 17,
+    title: "Food Processor 4L",
+    imageUrl: "/products/new/17.jpg",
   },
 ];
 const Products = () => {

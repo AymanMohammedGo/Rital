@@ -13,10 +13,17 @@ export default function Home() {
       <SlideImage />
       <TitleSction title="NEW ARRIVALS" color={"text-primary"} />
       <SlideBox />
-      <HappyClients />
+      <ImageOverlaysWithTitle
+        titlesection="Happy Clients"
+        title="Customer satisfaction"
+        imgURL="/Opinions/bg.jpg"
+        des="Excellence in quality is what makes us the preferred choice for our customers."
+      />
+      {/* <HappyClients /> */}
       <TitleSction title="BEST SELLER" color={"text-primary"} />
       <Products />
       <ImageOverlaysWithTitle
+        titlesection="CALL US"
         title="Empower your home with Rital Electrics"
         imgURL="/contact.jpg"
         des="Where Innovation Meets Excellence. Reach out to us for electrifying solutions!"
