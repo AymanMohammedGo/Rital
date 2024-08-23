@@ -236,7 +236,7 @@ const page = ({ params }) => {
       <ImageOverlaysCenter
         title="Product"
         des={product[0].title}
-        imgURL="/product.png"
+        imgURL={product[0].imageUrl}
       />
       <div className="max-w-screen-xl my-4 lg:my-10 mx-auto flex flex-col lg:flex-row items-center justify-center">
         <div className="mx-4 px-4 mb-3 w-full">
