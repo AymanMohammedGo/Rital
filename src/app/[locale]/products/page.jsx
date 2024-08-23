@@ -1,6 +1,5 @@
 import ImageOverlaysCenter from "@/components/ImageOverlaysCenter";
 import Products from "@/components/Products";
-import React from "react";
 
 const page = () => {
   return (

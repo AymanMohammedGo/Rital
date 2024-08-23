@@ -1,6 +1,6 @@
 import ImageOverlaysCenter from "@/components/ImageOverlaysCenter";
 import React from "react";
-
+import Image from "next/image";
 const page = () => {
   return (
     <div>
@@ -63,6 +63,13 @@ const page = () => {
               style in every product we offer.
             </p>
           </div>
+          {/* <Image
+            className="m-auto mt-10 lg:mt-20"
+            src="/rital-logo.png"
+            width="200"
+            height="200"
+            alt="rital"
+          /> */}
         </div>
       </div>
     </div>

@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -123,8 +122,16 @@ const Footer = () => {
                 <h1 className="font-bold ">Follow Us</h1>
               </div>
               <div className="text-sm space-y-2">
-                <p>Facabook</p>
-                <p>Instgram</p>
+                <p>
+                  <Link href="https://www.facebook.com/rital.electric">
+                    Facabook
+                  </Link>
+                </p>
+                <p>
+                  <Link href="https://www.instagram.com/rital.electric">
+                    Instagram
+                  </Link>
+                </p>
               </div>
             </div>
           </div>
