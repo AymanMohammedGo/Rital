@@ -3,9 +3,11 @@ import { useState } from "react";
 import LanguageChanger from "./LanguageChanger";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -67,7 +69,7 @@ const Header = () => {
                   }}
                   className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
                 >
-                  HOME
+                  {t("home")}
                 </Link>
               </li>
               <li>
@@ -78,7 +80,7 @@ const Header = () => {
                   }}
                   className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
                 >
-                  PRODUCTS
+                  {t("products")}
                 </Link>
               </li>
               <li>
@@ -89,7 +91,7 @@ const Header = () => {
                   }}
                   className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
                 >
-                  ABOUT
+                  {t("about")}
                 </Link>
               </li>
               <li>
@@ -100,7 +102,7 @@ const Header = () => {
                   }}
                   className={` block font-normal py-2 px-3 hover:bg-primary text-white rounded-lg transition-all`}
                 >
-                  CONTACT
+                  {t("contact")}
                 </Link>
               </li>
             </ul>

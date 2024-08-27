@@ -2,8 +2,11 @@
 import React, { useState } from "react";
 import ImageOverlaysCenter from "@/components/ImageOverlaysCenter";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const ContactPage = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     firstName: "",
     email: "",
@@ -65,7 +68,7 @@ const ContactPage = () => {
                   htmlFor="firstName"
                   className="block text-lg lg:text-xl font-medium text-gray-700"
                 >
-                  FirstName
+                  {t("FirstName")}
                 </label>
                 <input
                   type="text"
@@ -81,7 +84,7 @@ const ContactPage = () => {
                   htmlFor="email"
                   className="block text-lg lg:text-xl font-medium text-gray-700"
                 >
-                  Your email
+                  {t("Your email")}
                 </label>
                 <input
                   type="email"
@@ -97,7 +100,7 @@ const ContactPage = () => {
                   htmlFor="subject"
                   className="block text-lg lg:text-xl font-medium text-gray-700"
                 >
-                  Subject
+                  {t("Subject")}
                 </label>
                 <input
                   type="text"
@@ -113,7 +116,7 @@ const ContactPage = () => {
                   htmlFor="message"
                   className="block text-lg lg:text-xl font-medium text-gray-700"
                 >
-                  Your message
+                  {t("Your message")}
                 </label>
                 <textarea
                   id="message"
@@ -129,7 +132,7 @@ const ContactPage = () => {
                 className="w-full bg-primary text-lg lg:text-xl text-white font-semibold py-2 px-4 rounded-md hover:bg-secand transition duration-300"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? t("Sending...") : t("Send Message")}
               </button>
               {responseMessage && (
                 <p
@@ -139,7 +142,7 @@ const ContactPage = () => {
                       : "text-red-500"
                   } mt-4 text-lg text-center`}
                 >
-                  {responseMessage}
+                  {t(`${responseMessage}`)}
                 </p>
               )}
             </form>

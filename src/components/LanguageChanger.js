@@ -44,7 +44,7 @@ export default function LanguageChanger() {
   const { t } = useTranslation();
   const language = [
     { lim: "en", name: "English" },
-    { lim: "kr", name: "Kurdish" },
+    { lim: "it", name: "Italian" },
     { lim: "ar", name: "Arabic" },
   ];
   return (

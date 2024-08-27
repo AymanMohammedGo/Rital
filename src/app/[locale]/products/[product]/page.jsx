@@ -1,8 +1,12 @@
+"use client";
 import ImageOverlaysCenter from "@/components/ImageOverlaysCenter";
 import React from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
+  const { t } = useTranslation();
+
   const products = [
     {
       id: "1",
@@ -255,7 +259,7 @@ const page = ({ params }) => {
                 key={index}
                 className="text-base lg:text-xl mx-3 text-center mb-3 rounded-lg lg:mb-5 bg-secand text-white p-2"
               >
-                {item}
+                {t(`${item}`)}
               </p>
             ))}
           </div>
@@ -265,4 +269,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

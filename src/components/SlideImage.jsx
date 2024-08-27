@@ -42,16 +42,14 @@ const SlideImage = () => {
           <ImageOverlaysCenter
             imgURL="/bg_2.jpg"
             title="Turkish Tea Maker"
-            des="Rital electric tea maker meets Traditional Turkish tea with
-                  modern technology"
+            des="Rital electric tea maker meets Traditional Turkish tea with modern technology"
           />
         </SwiperSlide>
         <SwiperSlide className="w-screen h-screen">
           <ImageOverlaysCenter
             imgURL="/bg_1.jpg"
             title="Air Fryer"
-            des="make all your favorite foods with less of the oil and none of the
-              mess."
+            des="make all your favorite foods with less of the oil and none of the mess."
           />
         </SwiperSlide>
 

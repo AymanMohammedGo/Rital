@@ -1,4 +1,5 @@
 "use client";
+import { useTranslation } from "react-i18next";
 
 import React from "react";
 import Image from "next/image";
@@ -39,6 +40,7 @@ const sections = [
 ];
 const SlideBox = () => {
   const [activeSection, setActiveSection] = useState(1);
+  const { t } = useTranslation();
 
   const toggleSection = (id) => {
     setActiveSection(activeSection === id ? activeSection : id);
@@ -56,11 +58,11 @@ const SlideBox = () => {
           <div className="flex flex-col items-start h-full">
             <div className="flex  w-full">
               <span className="text-2xl font-bold mx-2 my-4 bg-primary  w-[60px] h-[60px] flex justify-center items-center text-white rounded-full">
-                {section.number}
+                {t(`${section.number}`)}
               </span>
               {activeSection === section.id && (
                 <h2 className="flex items-center flex-1 mx-2 text-xl lg:text-2xl font-bold">
-                  {section.title}
+                  {t(`${section.title}`)}
                 </h2>
               )}
               {activeSection !== section.id && (
@@ -82,7 +84,7 @@ const SlideBox = () => {
                     {section.title}
                   </h2> */}
                   <p className=" text-base h-[72px] md:h-[60px] lg:text-lg">
-                    {section.description}
+                    {t(`${section.description}`)}
                   </p>
                 </div>
                 <div className="w-full max-h-[400px] transition-all">

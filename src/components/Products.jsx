@@ -1,6 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useTranslation } from "react-i18next";
 
 const products = [
   {
@@ -90,6 +91,8 @@ const products = [
   },
 ];
 const Products = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="max-w-screen-xl px-4 m-auto grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4  gap-3 lg:gap-5  ">
       {products.map((item, index) => (
@@ -97,7 +100,7 @@ const Products = () => {
           <div className="relative overflow-hidden rounded-xl  transition-all duration-300   hover:scale-90 ">
             <div className=" text-center w-full h-[100px] lg:h-[90px]  ">
               <h1 className="px-2 h-full flex items-center justify-center text-lg lg:text-xl py-4 bg-secand text-white">
-                {item.title}
+                {t(`${item.title}`)}
               </h1>
             </div>
             <div className="h-[220px] sm:h-[400px] lg:h-[300px]">

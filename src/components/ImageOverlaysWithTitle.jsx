@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import TitleSction from "./TitleSction";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+
 const ImageOverlaysWithTitle = ({
   titlesection,
   title,
@@ -9,6 +13,8 @@ const ImageOverlaysWithTitle = ({
   button = false,
   titleButton = "Read More",
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative w-screen h-[600px] mt-10">
       <Image
@@ -23,21 +29,21 @@ const ImageOverlaysWithTitle = ({
         <div className=" text-center lg:text-start  text-white p-4">
           <div className="mb-10 lg:mb-14 text-center relative">
             <span className=" text-white  w-full font-bold  text-4xl lg:text-5xl">
-              {titlesection}
+              {t(`${titlesection}`)}
             </span>
           </div>
           <h1 className=" text-center font-bold my-6 text-4xl md:text-5xl lg:text-6xl ">
-            {title}
+            {t(`${title}`)}
           </h1>
           <p className="text-center mx-auto max-w-screen-lg  lg:my-6 text-lg md:text-xl lg:text-2xl">
-            {des}
+            {t(`${des}`)}
           </p>
           {button && (
             <Link
               href="/contact"
               className="bg-transparent hover:bg-primary hover:border-none border-white rounded-lg border-2 px-5 py-2 my-4 flex justify-center items-center w-fit mx-auto transition-all"
             >
-              {titleButton}
+              {t(`${titleButton}`)}
             </Link>
           )}
         </div>
