@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Magistral:wght@400;700&display=swap");
 
 @font-face {
   font-family: "Magistral Extra";
@@ -123,6 +121,45 @@
     url("/fonts/Magistral-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
+}
+
+/* Cairo Regular */
+@font-face {
+  font-family: "Cairo";
+  src: url("/fonts/cairo/Cairo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Cairo Medium */
+@font-face {
+  font-family: "Cairo";
+  src: url("/fonts/cairo/Cairo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Cairo Bold */
+@font-face {
+  font-family: "Cairo";
+  src: url("/fonts/cairo/Cairo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Cairo ExtraBold */
+@font-face {
+  font-family: "Cairo";
+  src: url("/fonts/cairo/Cairo-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("/fonts/cairo/Cairo-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 body {
