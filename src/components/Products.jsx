@@ -98,7 +98,7 @@ const Products = () => {
       {products.map((item, index) => (
         <Link key={index} href={`/products/${item.id}`}>
           <div className="relative overflow-hidden rounded-xl  transition-all duration-300   hover:scale-90 ">
-            <div className=" text-center w-full h-[100px] lg:h-[90px]  ">
+            <div className=" text-center w-full h-[125px] lg:h-[90px]  ">
               <h1 className="px-2 h-full flex items-center justify-center text-lg lg:text-xl py-4 bg-secand text-white">
                 {t(`${item.title}`)}
               </h1>

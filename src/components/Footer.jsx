@@ -76,8 +76,8 @@ const Footer = () => {
                 <h1 className="font-bold ">{t("Phone")}</h1>
               </div>
               <div className="text-sm space-y-2">
-                <p>+964 0770 153 9764</p>
-                <p>+964 0770 153 9764</p>
+                <p>+964-07701539764</p>
+                {/* <p>+964-07701539764</p> */}
               </div>
             </div>
           </div>
