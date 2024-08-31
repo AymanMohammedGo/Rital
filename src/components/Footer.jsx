@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
-const Footer = () => {
+const Footer = ({ dir }) => {
+  console.log(dir);
   const currentYear = new Date().getFullYear();
   const { t } = useTranslation();
 
@@ -76,8 +77,18 @@ const Footer = () => {
                 <h1 className="font-bold ">{t("Phone")}</h1>
               </div>
               <div className="text-sm space-y-2">
-                <p>+964-07701539764</p>
-                {/* <p>+964-07701539764</p> */}
+                <p className={dir !== "ar" ? "flex" : "hidden"}>
+                  +964 7703710808
+                </p>
+                <p className={dir !== "ar" ? "flex" : "hidden"}>
+                  +964 7703710909
+                </p>
+                <p className={dir === "ar" ? "flex" : "hidden"}>
+                  7703710808 964+
+                </p>
+                <p className={dir === "ar" ? "flex" : "hidden"}>
+                  7703710909 964+
+                </p>
               </div>
             </div>
           </div>
@@ -102,8 +113,8 @@ const Footer = () => {
                 <h1 className="font-bold ">{t("Email")}</h1>
               </div>
               <div className="text-sm space-y-2">
-                <p>Salim@ritalelectric.com</p>
-                <p>Rital@gmail.com</p>
+                {/* <p>Salim@ritalelectric.com</p> */}
+                <p>info@ritalelectric.com</p>
               </div>
             </div>
             <div className="text-white mb-8">

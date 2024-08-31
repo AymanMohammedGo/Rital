@@ -1,4 +1,3 @@
-
 import "./globals.css";
 import i18nConfig from "../../../i18nConfig";
 import { dir } from "i18next";
@@ -30,7 +29,7 @@ export default async function RootLayout({ children, params: { locale } }) {
         <body>
           <Header />
           {children}
-          <Footer />
+          <Footer dir={locale} />
         </body>
       </html>
     </TranslationsProvider>
