@@ -51,7 +51,7 @@ const Footer = ({ dir }) => {
                 <p>{t("Iraq - Sulaymaniyah")}</p>
                 <p>
                   {t(
-                    "arbat road srores complex of sulaymaniyah chamber of commerce, wharehouse number 417"
+                    "arbat road stores complex of sulaymaniyah chamber of commerce, wharehouse number 417"
                   )}
                 </p>
               </div>
@@ -77,18 +77,17 @@ const Footer = ({ dir }) => {
                 <h1 className="font-bold ">{t("Phone")}</h1>
               </div>
               <div className="text-sm space-y-2">
-                <p className={dir !== "ar" ? "flex" : "hidden"}>
-                  +964 7703710808
-                </p>
-                <p className={dir !== "ar" ? "flex" : "hidden"}>
-                  +964 7703710909
-                </p>
-                <p className={dir === "ar" ? "flex" : "hidden"}>
-                  7703710808 964+
-                </p>
-                <p className={dir === "ar" ? "flex" : "hidden"}>
-                  7703710909 964+
-                </p>
+                {dir !== "ar" && (
+                  <>
+                    <p>+964 7703710808</p> <p>+964 7703710909</p>
+                  </>
+                )}
+                {dir === "ar" && (
+                  <>
+                    <p>7703710808 964+</p>
+                    <p>7703710909 964+</p>
+                  </>
+                )}
               </div>
             </div>
           </div>
