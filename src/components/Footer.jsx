@@ -12,21 +12,21 @@ const Footer = ({ dir }) => {
   return (
     <footer className="bg-secand z-10 pt-16 pb-8 px-4 ">
       <div className="relative mx-auto max-w-screen-xl">
-        <div className="flex flex-col md:flex-row  items-center justify-between mb-10">
-          <Link href={`/`} className="flex items-center">
-            <Image
-              src="/rital-logo-white.png"
-              width={150}
-              height={150}
-              alt="logo"
-            />
-          </Link>
-        </div>
         <div
-          className={` grid grid-cols-1 text-center md:text-start gap-0 md:gap-8 lg:gap-16 xl:gap-28 md:grid-cols-4`}
+          className={` grid grid-cols-1 my-3 lg:my-10 text-center md:text-start gap-0 md:gap-8 lg:gap-16 xl:gap-28 md:grid-cols-4`}
         >
-          <div className="md:col-span-2">
-            <div className="text-white mb-8 ">
+          <div className="">
+            <div className="flex flex-col md:flex-row  items-center justify-between mb-10">
+              <Link href={`/`} className="flex items-center">
+                <Image
+                  src="/rital-logo-white.png"
+                  width={150}
+                  height={150}
+                  alt="logo"
+                />
+              </Link>
+            </div>
+            {/* <div className="text-white mb-8 ">
               <div className="flex items-center mb-3 justify-center md:justify-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,68 +89,32 @@ const Footer = ({ dir }) => {
                   </>
                 )}
               </div>
+            </div> */}
+          </div>
+          <div className="text-white mb-8">
+            <div className="flex items-center mb-3 justify-center md:justify-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail mx-2"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <h1 className="font-bold ">{t("Email")}</h1>
+            </div>
+            <div className="text-sm space-y-2">
+              {/* <p>Salim@ritalelectric.com</p> */}
+              <p>info@ritalelectric.com</p>
             </div>
           </div>
-          <div className="">
-            <div className="text-white mb-8">
-              <div className="flex items-center mb-3 justify-center md:justify-start">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-mail mx-2"
-                >
-                  <rect width="20" height="16" x="2" y="4" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-                <h1 className="font-bold ">{t("Email")}</h1>
-              </div>
-              <div className="text-sm space-y-2">
-                {/* <p>Salim@ritalelectric.com</p> */}
-                <p>info@ritalelectric.com</p>
-              </div>
-            </div>
-            <div className="text-white mb-8">
-              <div className="flex items-center mb-3 justify-center md:justify-start">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-user-check mx-2"
-                >
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <polyline points="16 11 18 13 22 9" />
-                </svg>
-                <h1 className="font-bold ">{t("Follow Us")}</h1>
-              </div>
-              <div className="text-sm space-y-2">
-                <p>
-                  <Link href="https://www.facebook.com/rital.electric">
-                    {t("Facabook")}
-                  </Link>
-                </p>
-                <p>
-                  <Link href="https://www.instagram.com/rital.electric">
-                    {t("Instagram")}
-                  </Link>
-                </p>
-              </div>
-            </div>
-          </div>
-
           <div className="text-white mb-8">
             <div className="flex items-center mb-3 justify-center md:justify-start ">
               <svg
@@ -187,6 +151,39 @@ const Footer = ({ dir }) => {
                 <Link href="/contact">{t("contact")}</Link>
               </li>
             </ul>
+          </div>
+          <div className="text-white mb-8">
+            <div className="flex items-center mb-3 justify-center md:justify-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-user-check mx-2"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <polyline points="16 11 18 13 22 9" />
+              </svg>
+              <h1 className="font-bold ">{t("Follow Us")}</h1>
+            </div>
+            <div className="text-sm space-y-2">
+              <p>
+                <Link href="https://www.facebook.com/rital.electric">
+                  {t("Facabook")}
+                </Link>
+              </p>
+              <p>
+                <Link href="https://www.instagram.com/rital.electric">
+                  {t("Instagram")}
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
         <p className="text-center text-white ">
