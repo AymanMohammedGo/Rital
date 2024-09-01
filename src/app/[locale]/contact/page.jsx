@@ -149,7 +149,7 @@ const ContactPage = () => {
           </div>
           <div className="md:w-1/2 py-5 lg:px-5">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51929.858465514895!2d45.41885452183222!3d35.56318096433548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40002c0536d143b1%3A0xf791750d4e215dea!2z2KfZhNiz2YTZitmF2KfZhtmK2KksIEt1cmRpc3RhbiBSZWdpb24!5e0!3m2!1sar!2siq!4v1723470629892!5m2!1sar!2siq"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89547.20751935034!2d9.333618653506816!3d45.46274824496751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2z2YXZitmE2KfZhtmI2Iwg2YXZgtin2LfYudipINmF2YrZhNin2YbZiNiMINil2YrYt9in2YTZitin!5e0!3m2!1sar!2siq!4v1725223615073!5m2!1sar!2siq"
               className="w-full h-64 md:h-full rounded-md shadow-lg"
               allowFullScreen=""
               loading="lazy"

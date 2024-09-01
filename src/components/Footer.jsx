@@ -110,9 +110,9 @@ const Footer = ({ dir }) => {
               </svg>
               <h1 className="font-bold ">{t("Email")}</h1>
             </div>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 ">
               {/* <p>Salim@ritalelectric.com</p> */}
-              <p>info@ritalelectric.com</p>
+              <p className="mx-[32px]">info@ritalelectric.com</p>
             </div>
           </div>
           <div className="text-white mb-8">
@@ -138,16 +138,16 @@ const Footer = ({ dir }) => {
             <ul
               className={`font-medium space-y-2 lg:text-start flex flex-col   `}
             >
-              <li>
+              <li className="mx-[32px]">
                 <Link href="/">{t("home")}</Link>
               </li>
-              <li>
+              <li className="mx-[32px]">
                 <Link href="/products">{t("products")}</Link>
               </li>
-              <li>
+              <li className="mx-[32px]">
                 <Link href="/about">{t("about")}</Link>
               </li>
-              <li>
+              <li className="mx-[32px]">
                 <Link href="/contact">{t("contact")}</Link>
               </li>
             </ul>
@@ -173,12 +173,12 @@ const Footer = ({ dir }) => {
               <h1 className="font-bold ">{t("Follow Us")}</h1>
             </div>
             <div className="text-sm space-y-2">
-              <p>
+              <p className="mx-[32px]">
                 <Link href="https://www.facebook.com/rital.electric">
                   {t("Facabook")}
                 </Link>
               </p>
-              <p>
+              <p className="mx-[32px]">
                 <Link href="https://www.instagram.com/rital.electric">
                   {t("Instagram")}
                 </Link>
