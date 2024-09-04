@@ -89,6 +89,31 @@ const products = [
     title: "RT - 1036 Copper Motor",
     imageUrl: "/products/new/RT - 1036 Copper Motor.jpg",
   },
+  {
+    id: 18,
+    title: "RTB - 815",
+    imageUrl: "/products/new/RTB-815.jpg",
+  },
+  {
+    id: 19,
+    title: "RTB - 813",
+    imageUrl: "/products/new/RTB-813.jpg",
+  },
+  {
+    id: 20,
+    title: "RTJ - 577",
+    imageUrl: "/products/new/RTJ-577.jpg",
+  },
+  {
+    id: 21,
+    title: "RTJ - 571",
+    imageUrl: "/products/new/RTJ-571.jpg",
+  },
+  {
+    id: 22,
+    title: "RTG - 921",
+    imageUrl: "/products/new/RTG-921.jpg",
+  },
 ];
 const Products = () => {
   const { t } = useTranslation();
